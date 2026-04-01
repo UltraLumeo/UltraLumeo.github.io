@@ -41,16 +41,17 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .button { 
+    .button, input[type=submit] { 
       background: #4CAF50; 
       color: white; 
       padding: 10px 20px; 
       text-decoration: none; 
       border-radius: 5px; 
       display: inline-block;
+      cursor: pointer;
     }
 
-    .button:hover {
+    .button:hover, input[type=submit]:hover {
       background: #2e7d32;
     }
 
@@ -60,6 +61,8 @@
       text-align: center; 
       padding: 15px; 
     }
+
+    .payment-note { font-size: 0.9em; color: #555; margin-bottom: 15px; }
   </style>
 </head>
 <body>
@@ -102,40 +105,61 @@
     <p>Access quality exam materials for all levels. Pay per subject and download instantly:</p>
 
     <h3>📘 Primary School</h3>
-
-    <!-- Grade 1 Download Buttons -->
     <h4>Grade 1 Study Materials</h4>
 
     <!-- English -->
     <h5>English — KSh 100 per PDF</h5>
-    <a href="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_English.pdf" class="button" target="_blank">Download English</a>
+    <p class="payment-note">Pay via PayPal or M-Pesa, then download:</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="marykanini248@gmail.com">
+      <input type="hidden" name="item_name" value="Grade 1 English PDF">
+      <input type="hidden" name="amount" value="100">
+      <input type="hidden" name="currency_code" value="KES">
+      <input type="hidden" name="return" value="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_English.pdf">
+      <input type="submit" value="Buy & Download English">
+    </form>
+    <p class="payment-note">OR pay via M-Pesa Paybill: <strong>0759809720</strong> — send KSh 100 and then contact via WhatsApp for download.</p>
 
     <!-- Mathematics -->
     <h5>Mathematics — KSh 100 per PDF</h5>
-    <a href="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_Mathematics.pdf" class="button" target="_blank">Download Maths</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="marykanini248@gmail.com">
+      <input type="hidden" name="item_name" value="Grade 1 Mathematics PDF">
+      <input type="hidden" name="amount" value="100">
+      <input type="hidden" name="currency_code" value="KES">
+      <input type="hidden" name="return" value="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_Mathematics.pdf">
+      <input type="submit" value="Buy & Download Maths">
+    </form>
+    <p class="payment-note">OR pay via M-Pesa Paybill: <strong>0759809720</strong></p>
 
     <!-- Science -->
     <h5>Science — KSh 100 per PDF</h5>
-    <a href="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_Science.pdf" class="button" target="_blank">Download Science</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="marykanini248@gmail.com">
+      <input type="hidden" name="item_name" value="Grade 1 Science PDF">
+      <input type="hidden" name="amount" value="100">
+      <input type="hidden" name="currency_code" value="KES">
+      <input type="hidden" name="return" value="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_Science.pdf">
+      <input type="submit" value="Buy & Download Science">
+    </form>
+    <p class="payment-note">OR pay via M-Pesa Paybill: <strong>0759809720</strong></p>
 
     <!-- Social Studies -->
     <h5>Social Studies — KSh 100 per PDF</h5>
-    <a href="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_SocialStudies.pdf" class="button" target="_blank">Download Social Studies</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="marykanini248@gmail.com">
+      <input type="hidden" name="item_name" value="Grade 1 Social Studies PDF">
+      <input type="hidden" name="amount" value="100">
+      <input type="hidden" name="currency_code" value="KES">
+      <input type="hidden" name="return" value="https://raw.githubusercontent.com/UltraLumeo/UltraLumeo.github.io/main/JuniorPrimary/Grade1_SocialStudies.pdf">
+      <input type="submit" value="Buy & Download Social Studies">
+    </form>
+    <p class="payment-note">OR pay via M-Pesa Paybill: <strong>0759809720</strong></p>
 
-    <h3>📗 Junior Secondary</h3>
-    <ul>
-      <li>Grade 7–9 Notes — KSh 150 per PDF</li>
-      <li>Practice Exams & Assignments — KSh 200 per PDF</li>
-    </ul>
-
-    <h3>📕 Senior Secondary</h3>
-    <ul>
-      <li>Form 1–4 Notes — KSh 200 per PDF</li>
-      <li>KCSE Revision Papers — KSh 250 per PDF</li>
-      <li>Topical Questions & Answers — KSh 300 per PDF</li>
-    </ul>
-
-    <a href="#contact" class="button">Get Materials</a>
   </section>
 
   <!-- Contact Section -->
